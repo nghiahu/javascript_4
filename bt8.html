@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let n;
+do {
+  n = prompt("Nhập vào một số nguyên dương:");
+  n = parseInt(n);
+  if (n < 1) {
+    console.log("Số nhập vào không hợp lệ, hãy nhập lại!");
+  }
+} while (n < 1);
+function isPrime(x) {
+  if (x < 2) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(x); i++) {
+    if (x % i == 0) {
+      return false;
+    }
+  }
+  return true;
+}
+for (let i = 1; i < n; i++) {
+  if (isPrime(i)) {
+    console.log(i);
+  }
+}
+
+    </script>
+</body>
+</html>

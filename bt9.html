@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let n;
+do {
+  n = +prompt("Nhập vào một số nguyên dương:");
+  if (n < 1) {
+    console.log("Số nhập vào không hợp lệ, hãy nhập lại!");
+  }
+} while (n < 1);
+let f1 = 0;
+let f2 = 1;
+
+let sum = 0;
+
+while (sum < n-1) {
+  console.log(f1);
+  sum += f1;
+  let f3 = f1 + f2;
+  f1 = f2;
+  f2 = f3;
+}
+
+    </script>
+</body>
+</html>

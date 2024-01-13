@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let n, f = 1;
+do {
+  n = +prompt("Nhập vào một số nguyên dương:");
+  if (n < 0) {
+    console.log("Số nhập vào không hợp lệ, hãy nhập lại!");
+  }
+} while (n < 0);
+for (let i = 1; i <= n; i++) {
+  f = f * i;
+}
+console.log("Giai thừa của " + n + " là: " + f);
+    </script>
+</body>
+</html>
